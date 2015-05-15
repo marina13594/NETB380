@@ -19,8 +19,13 @@ public:
 private slots:
     void on_treeView_clicked(const QModelIndex &index);
 
+    void on_listView_clicked(const QModelIndex &index);
+
+    void on_ok_button_clicked();
+
 private:
     Ui::SecDialog *ui;
+    QString sPath;
     QFileSystemModel *dirmodel;
     QFileSystemModel *filemodel;
 };
